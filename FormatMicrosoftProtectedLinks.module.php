@@ -64,7 +64,7 @@ class FormatMicrosoftProtectedLinks extends WireData implements Module, Configur
 					}
 				}
 			}
-			$str = $dom->saveHtml();
+			$str = str_replace('<?xml encoding="utf-8" ?>', '', $dom->saveHtml());
 			$page->$field = $str;
 		}
 
