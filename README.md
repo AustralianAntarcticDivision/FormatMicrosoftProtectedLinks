@@ -5,8 +5,6 @@ Copyright (c) 2026 Commonwealth of Australia
 
 This module will check the selected fields for [Microsoft Protected Links](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about) on saving the page and convert them to their original URL, preventing unintentional leaking of internal email addresses and other data.
 
-If you would instead prefer to replace them at render time, a [TextFormatter version of this module](https://github.com/AustralianAntarcticDivision/TextformatterMicrosoftProtectedLinks) is available.
-
 ## Requirements
 
 - PHP 7.3+
@@ -14,7 +12,7 @@ If you would instead prefer to replace them at render time, a [TextFormatter ver
 
 ## Installing
 
-This module is installed just like any other ProcessWire module: copy or clone the directory containing this module to your /site/modules/ directory, log in, go to Admin > Modules, click "Check for new modules", and install "Replace Outlook Protected Links".
+This module is installed just like any other ProcessWire module: copy or clone the directory containing this module to your /site/modules/ directory, log in, go to Admin > Modules, click "Check for new modules", and install "Replace Microsoft Protected Links".
 
 ## How to use
 

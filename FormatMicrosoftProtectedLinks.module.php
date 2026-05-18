@@ -17,7 +17,7 @@ class FormatMicrosoftProtectedLinks extends WireData implements Module, Configur
 
 	public static function getModuleInfo() {
 		return [
-			'title' => 'Replace Outlook Protected Links',
+			'title' => 'Replace Microsoft Protected Links',
 			'version' => '100',
 			'summary' => 'Replace protected links from Outlook/Teams/Microsoft Office with the original link.',
 			'author' => 'Australian Antarctic Division',
