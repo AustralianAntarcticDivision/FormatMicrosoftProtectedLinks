@@ -18,7 +18,7 @@ class FormatMicrosoftProtectedLinks extends WireData implements Module, Configur
 	public static function getModuleInfo() {
 		return [
 			'title' => 'Replace Microsoft Protected Links',
-			'version' => '100',
+			'version' => '101',
 			'summary' => 'Replace protected links from Outlook/Teams/Microsoft Office with the original link.',
 			'author' => 'Australian Antarctic Division',
 			'icon' => 'link',
@@ -53,7 +53,7 @@ class FormatMicrosoftProtectedLinks extends WireData implements Module, Configur
 
 			foreach ($anchors as $anchor) {
 				$parsedURL = parse_url($anchor->getAttribute('href'));
-				if ($parsedURL === false) {
+				if (empty($parsedURL['host'])) {
 					continue; // malformed URL, skip
 				}
 
